@@ -1,0 +1,7 @@
+# Strategic Product Thinking, Module 1 Lab (Exercise 1)
+
+## Responses
+- **Write one feature from the map that, if an engineer asked “why is this a priority for our 12-week roadmap?”, you honestly could not give a strategic answer for.:** Haptic tap feedback
+- **Write one feature that looks “correct” for the app but has zero strategic weight, you have no idea if it helps the company make money or whether a single user actually asked for it.:** Battery efficient reminders
+- **Compare V3 to your Step 1 baseline. What changed, and is the output objectively better, did the AI get smarter, or did your added PM knowledge (JTBD, effort/impact, retention) force it to be useful?:** V3 is better because it moved from a feature list to a strategy map. Instead of just showing what to build, it explains who it's for (JTBD), what problems exist, what drives retention, and which features have the highest impact. The improvement came mainly from applying PM frameworks, not just from the AI generating more ideas.
+- **Key takeaway: how does this prove the PM’s role is to think while the AI’s role is to execute?:** This exercise shows that AI can generate features and organize information quickly, but it doesn't know what matters most. The PM provides the strategic thinking by defining user needs, prioritizing tradeoffs, and linking features to business outcomes. The PM decides what is valuable; the AI helps execute and structure it.
