@@ -1,17 +1,17 @@
-# Competitive Analysis & Journey Map
+# Competitive Analysis & Journey Map (Module 2)
 
-> Module 2 · Discover Product Opportunities via Qualitative Signals — ★ Deliverable 2
->
-> _You'll complete this during Module 2._
-
-## Workaround summary
-
-_How do users solve this problem today, because the existing tools don't meet their needs?_
-
-_____
-
-## High-level journey map
-
-_The step-by-step experience of your proposed solution, showing how it removes current friction._
-
-_[screenshot or link to your journey map — make sure it's shareable]_
+## Responses
+- **Role, who are you solving for? (the specific user segment or profile):** A dispatcher (day or night shift) responsible for coordinating drivers in real time across an active fleet.
+- **Goal, what is this user ultimately trying to achieve?:** To have an accurate, trustworthy view of where every driver and delivery stands, so they can reassign and problem-solve on the fly.
+- **Friction, the main barrier (moment of misery) stopping them from succeeding:** Dispatch reassignments take 8–15 minutes to propagate to drivers with no push notification, and driver status updates lag 20–60 minutes on the dashboard — so a stop can show "in progress" long after it's delivered. The dispatcher's Moment of Misery is captured directly in the research: they've stopped trusting the board and now run a parallel WhatsApp group as "the real system," meaning they're managing two systems instead of one.
+- **External tools, the outside platforms or tools the user is forced to use:** A parallel WhatsApp group used as the de facto coordination channel between dispatch and drivers.
+Direct phone calls to drivers or the office to confirm status when the dashboard can't be trusted (echoed in the driver-side research, where a driver whose app crashed had to call the office to have her remaining stops read back to her).
+Drivers independently texting dispatchers directly rather than routing actions through the app, which dispatchers then have to track manually.
+- **The process, the 3 to 5 manual steps the user takes to get the job done:** Dispatcher reassigns a route in the platform.
+Knowing the app won't notify the driver for 8–15 minutes, the dispatcher immediately posts the same reassignment in the WhatsApp group to get real-time acknowledgment.
+Throughout the shift, the dispatcher watches the dashboard but doesn't trust stop statuses, since a delivered stop can sit as "in progress" for up to an hour.
+To get a real answer, the dispatcher pings the driver directly on WhatsApp or by phone, asking "did you actually deliver stop 12?"
+The dispatcher now maintains two running pictures of the fleet in parallel — the official dashboard and their own mental (or WhatsApp-thread) model — and reconciles them manually, stop by stop.
+- **Core frustration, the exact moment the process feels most “broken”:** This is your Problem Hook made literal: the dispatcher's real job — managing deliveries — has been displaced by the second, unpaid job of managing the software's unreliability. Every minute spent cross-checking WhatsApp against the dashboard is a minute not spent solving actual delivery problems. And because this workaround is invisible to RouteLogic (it happens entirely outside the platform), it doesn't show up as a "bug" — it shows up later, as the adoption and trust erosion that enterprise decision-makers cite when evaluating leaner competitors. The dispatcher's WhatsApp group isn't a minor inconvenience; it's a leading indicator of the same renewal risk your enterprise persona is already voicing.
+- **The evidence, a specific quote or behavior from the research that proves this:** A dispatcher explicitly reported: “I reassign a route and the driver doesn’t see it for ten, fifteen minutes. By then they’ve driven the wrong way. We keep a WhatsApp group as the real system.” (UXR‑02)
+- **📎 Your journey map, a shareable link, or the map file you committed (e.g. journey-map.html):** https://github.com/vigneshwars1410/Product-School/blob/a4868d4a93a8b7e7f21f1ccbb9dc89706650ad9a/02-discovery/dispatcher_future_state_journey-map.png
