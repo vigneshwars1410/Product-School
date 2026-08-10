@@ -1,17 +1,35 @@
-# Hypothesis & Success Metrics
+# Hypothesis & Success Metrics (Module 3)
 
-> Module 3 · Use Analytics and Metrics for Data-Driven Decisions — ★ Deliverable 3
->
-> _You'll complete this during Module 3._
+## Pre-work · Hypothesis check
+- **Role , who you are solving for (from M2):** A dispatcher (day or night shift) responsible for coordinating drivers in real time across an active fleet.
+- **Goal , what this user is ultimately trying to achieve:** To have an accurate, trustworthy view of where every driver and delivery stands, so they can reassign and problem-solve on the fly.
+- **Friction / moment of misery , the specific pain blocking their goal:** Dispatch reassignments take 8–15 minutes to propagate to drivers with no push notification, and driver status updates lag 20–60 minutes on the dashboard — so a stop can show "in progress" long after it's delivered. The dispatcher's Moment of Misery is captured directly in the research: they've stopped trusting the board and now run a parallel WhatsApp group as "the real system," meaning they're managing two systems instead of one.
+- **Current workaround , the external tool or manual process they rely on (M2):** A parallel WhatsApp group used as the de facto coordination channel between dispatch and drivers. Direct phone calls to drivers or the office to confirm status when the dashboard can't be trusted (echoed in the driver-side research, where a driver whose app crashed had to call the office to have her remaining stops read back to her). Drivers independently texting dispatchers directly rather than routing actions through the app, which dispatchers then have to track manually.
+- **Problem Hook , your one-sentence framing of the business crisis (M1):** When dispatchers spend more time managing the software than managing deliveries, RouteLogic risks losing customers to leaner competitors built for speed.
+- **Value Proposition , the outcome your initiative promised to deliver (M1):** Velocity streamlines the RouteLogic experience for frontline coordinators by reducing complexity and surfacing the workflows, actions, and metrics they use most, enabling faster execution and preserving customer loyalty before operational friction drives customers elsewhere.
 
-## Finalized product hypothesis
+## Read your data snapshots
+- **Does the funnel data confirm your M2 friction point, or does it tell a different story? Note where the numbers align with the qualitative pain you found and where they diverge.:** _(not filled in)_
+- **Do the retention patterns align with the workaround your M2 persona used to find content? Note what the Mo. 0→1 drop suggests about the onboarding experience your persona described as frustrating.:** _(not filled in)_
+- **Does the LTV gap and the content mix (61% trending for Wanderers) confirm the moment of misery your persona described? Note which segment your persona is in and whether the data confirms their pain.:** _(not filled in)_
+- **Does the low adoption confirm your persona is burdened by tools they don’t use? Note whether the low scheduling adoption (42%) for coordinators matches your M2 moment of misery.:** Yes, the numbers back my qualitative insight- the Coordinator persona is overloaded with tools but under‑served by the ones that actually work.
+The Shift Scheduling Module’s 42% coordinator adoption directly mirrors my M2 moment of misery- the dispatcher’s struggle to coordinate routes and shifts through unreliable systems. Coordinators are clearly not embracing the scheduling tool, likely because they’ve defaulted to WhatsApp and manual reconciliation for real‑time coordination. The data quantifies that pain: even the feature designed to streamline scheduling isn’t trusted or used consistently.
+- **Does the workflow data match the manual process or hack you documented in M2? Note whether the specific drop-offs or time gaps explain why your persona avoids the digital tool.:** Yes- the workflow data perfectly matches the manual process documented in M2. The dataset shows that 69% of coordinators abandon the workflow after route assignment, which mirrors my persona’s behavior: dispatchers stop trusting the platform and switch to WhatsApp or phone calls for real‑time coordination. That drop‑off directly corresponds to the moment in my M2 process where the dispatcher posts reassignments manually in the WhatsApp group because the app’s sync delay makes the official workflow unusable.
 
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
+Time gaps explain avoidance:
+The Compliance Checks step takes 14.6 minutes vs. a 3‑minute benchmark, and Shift Handoff averages 11.3 minutes vs. 4.5 minutes. These massive time gaps explain why coordinators avoid completing the digital workflow- it’s simply too slow and unreliable compared to their manual workaround. The data quantifies the frustration captured qualitatively: the system wastes time and breaks trust, forcing users to maintain two parallel pictures of the fleet.
+- **Look at the CSAT heatmap. Which specific cell most directly maps to your persona’s friction? Note how the NPS trend justifies the urgency of your M1 Problem Hook.:** The CSAT heatmap makes the friction point clear- the cell that most directly maps to the persona’s pain is Coordinators × Scheduling (2.6).
+The Coordinator NPS collapse from +18 to 12 underscores the urgency of the M1 Problem Hook. It shows that frontline sentiment has deteriorated sharply as manual workarounds and tool complexity have grown. The 3.4× increase in daily workaround time (from 9 to 31 minutes) proves the system’s inefficiency is now materially impacting morale and renewal risk.
 
-## Success metrics
-
-| Metric | Type | Target | Why it matters |
-|---|---|---|---|
-| _North-star_ | | _____ | _____ |
-| _Leading indicator_ | | _____ | _____ |
-| _Guardrail_ | | _____ | _____ |
+## Step 3 · Craft your hypothesis
+- **Qualitative evidence (from M2) , quote the specific friction / moment of misery for your persona:** “I reassign a route and the driver doesn’t see it for ten, fifteen minutes. By then they’ve driven the wrong way. We keep a WhatsApp group as the real system.”- Dispatcher quote from M2, showing the exact moment of misery when trust in the dashboard collapses.
+- **Quantitative evidence (from M3) , name the metric or data point that confirms the pain; cite the number:** Coordinator Scheduling CSAT = 2.6 and NPS dropped from +18 to 12. These metrics confirm the pain: coordinators avoid the scheduling tool, defaulting to manual workarounds, and overall sentiment has sharply declined.
+- **Persona , role, goal, and the friction you confirmed in the reconciliation steps:** Role: Dispatcher / Coordinator
+Goal: Maintain real‑time visibility and coordination of fleet operations
+Friction: The scheduling module delays updates by 8–15 minutes, forcing dispatchers to duplicate work in WhatsApp and reconcile stop statuses manually.
+- **Problem you are solving , one sentence describing the specific friction this initiative removes:** Removing the trust breakdown in scheduling by ensuring route reassignments and stop updates are delivered in real time, eliminating the need for parallel WhatsApp coordination.
+- **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Coordinators shift back into the platform as their single source of truth, reducing manual workarounds. This behavior change improves retention (less churn from complexity), stabilizes NPS, and protects revenue from frontline dissatisfaction.
+- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** Coordinator Scheduling CSAT rises above 3.5 and workflow completion rate for shift handoff climbs above 60%. These are leading indicators that the trust gap is closing.
+- **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Driver adoption of core features (Dispatch Board, Route Optimizer) must not drop below 85%. Protects the existing base while fixing coordinator pain.
+- **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** Evaluate after 90 days of rollout. Minimum threshold to proceed: +0.5 CSAT gain and >=15% improvement in workflow completion. If not met, pivot or kill the initiative.
+- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** Based on my qualitative evidence (dispatchers abandoning the dashboard and relying on WhatsApp for real‑time coordination) and quantitative evidence (Coordinator Scheduling CSAT = 2.6 and NPS drop from +18 to 12), I believe that solving the scheduling trust gap for coordinator persona will result in higher workflow completion and improved frontline sentiment, as measured by a +15% increase in workflow completion and a +0.5 CSAT gain. I will protect driver adoption of core features (Dispatch Board, Route Optimizer) above 85%, and will make a go/no‑go decision after 90 days of rollout.
